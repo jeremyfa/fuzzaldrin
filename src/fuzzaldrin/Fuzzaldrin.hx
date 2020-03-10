@@ -6,10 +6,10 @@ class Fuzzaldrin {
 
 	public static var RE_SPACE = ~/%s/;
 
-	public static function filter(candidates:Array<Dynamic>, query:String, ?options:{
+	public static function filter<T>(candidates:Array<T>, query:String, ?options:{
 		?key:String,
 		?maxResults:Int
-	}) {
+	}):Array<T> {
 		var queryHasSlashes = false;
 		if (query != null && query.length > 0) {
 			queryHasSlashes = query.indexOf(PATH_SEPARATOR) != -1;
@@ -58,7 +58,7 @@ class Fuzzaldrin {
 			var baseMatches = Matcher.basenameMatch(string, query);
 			matches = matches.concat(baseMatches);
 			matches.sort(sortMatches);
-			var seen = null;
+			var seen = -1;
 			var index = 0;
 			while (index < matches.length) {
 				if (index != 0 && seen == matches[index]) {

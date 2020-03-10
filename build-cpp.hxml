@@ -1,0 +1,6 @@
+-cp src
+-D analyzer-optimize
+-cp test
+-main Main
+--cpp cpp
+--cmd cpp/Main
