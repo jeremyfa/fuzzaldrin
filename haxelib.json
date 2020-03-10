@@ -4,8 +4,8 @@
     "license": "MIT",
     "tags": ["fuzzaldrin","string","scoring","autocomplete","autocompletion","code","list"],
     "description": "Fuzzy filtering and string scoring (ported to haxe from https://github.com/atom/fuzzaldrin).",
-    "version": "0.1.0",
-    "releasenote": "Initial working project",
+    "version": "0.1.1",
+    "releasenote": "Use generic typing with filter() ; Fixes for static targets (cpp etc...)",
     "contributors": ["jeremyfa"],
     "classPath": "src/",
     "dependencies": {}
