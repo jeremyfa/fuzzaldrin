@@ -1,0 +1,12 @@
+{
+    "name": "fuzzaldrin",
+    "url" : "https://github.com/jeremyfa/fuzzaldrin/",
+    "license": "MIT",
+    "tags": ["fuzzaldrin","string","scoring","autocomplete","autocompletion","code","list"],
+    "description": "Fuzzy filtering and string scoring (ported to haxe from https://github.com/atom/fuzzaldrin).",
+    "version": "0.1.0",
+    "releasenote": "Initial working project",
+    "contributors": ["jeremyfa"],
+    "classPath": "src/",
+    "dependencies": {}
+  }
